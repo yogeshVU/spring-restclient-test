@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: google-client-id
+            client-secret: google-client-secret
+            scope:
+              - email
+              - profile
+              - https://www.googleapis.com/auth/youtube
+
+youtube:
+  principal: google-principal-name
+  url: https://www.googleapis.com/youtube/v3
+  title: "This video has %d views"
+  id: Ogl3bN7oV0w
